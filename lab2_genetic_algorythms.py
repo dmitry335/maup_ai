@@ -7,10 +7,10 @@ HIGHEST = 63
 LOWEST = 0
 
 # константи генетичного алгоритму
-POPULATION_SIZE = 25    # кількість особин в популяції
+POPULATION_SIZE = 300    # кількість особин в популяції
 P_CROSSOVER = 0.9       # вирогідність схрещування
 P_MUTATION = 0.1        # вирогідність мутації особини
-MAX_GENERATIONS = 200   # кількість поколінь
+MAX_GENERATIONS = 100   # кількість поколінь
 
 TOUR_CANDIDATES = 2     # чисельність турніру
 
@@ -250,7 +250,8 @@ line_t_avg, = plt.plot(avg_fitness_values_tournament, label='турнір сер
 plt.xlabel('Покоління')
 plt.ylabel('Макс/средняя приспособленность')
 # plt.title('Залежність максимальної та середньої пристосованості від покоління')
-plt.title('Рулетка - 25 особини')
+# plt.title('Рулетка - 25 особини')
+# plt.title( POPULATION_SIZE +' особини')
 ax.legend(handles=[line_r_max, line_r_avg])
 # ax.legend(handles=[line_t_max, line_t_avg])
 # ax.legend(handles=[line_r_max, line_r_avg, line_t_max, line_t_avg])
